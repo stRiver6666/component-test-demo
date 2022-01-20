@@ -1,0 +1,34 @@
+{
+    "name": "component-test-demo",
+    "version": "0.0.0",
+    "files": [
+        "dist"
+    ],
+    "module": "./dist/testpub.es.js",
+    "main": "./dist/testpub.umd.js",
+    "exports": {
+        ".": {
+            "import": "./dist/testpub.es.js",
+            "require": "./dist/testpub.umd.js"
+        },
+        "./dist/style.css": {
+            "import": "./dist/style.css",
+            "require": "./dist/style.css"
+        }
+    },
+    "keywords": [
+        "test"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "vue": "^3.2.25"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^2.0.0",
+        "vite": "^2.7.2"
+    }
+}
